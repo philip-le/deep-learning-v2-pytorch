@@ -1,3 +1,5 @@
 .ipynb_checkpoints
 convolutional-neural-networks/transfer-learning/hymenoptera_data
 convolutional-neural-networks/cifar-cnn/data
+*.pt
+*.gz
