@@ -41,6 +41,7 @@ def imshow(image, ax=None, title=None, normalize=True):
         image = np.clip(image, 0, 1)
 
     ax.imshow(image)
+    ax.set_title(title)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.spines['left'].set_visible(False)
