@@ -3,7 +3,8 @@ convolutional-neural-networks/transfer-learning/hymenoptera_data
 convolutional-neural-networks/cifar-cnn/data
 project-face-generation/processed_celeba_small
 project-face-generation/__pycache__
+dcgan-svhn/data/
 *.pt
 *.gz
 *.pyc
-
+*.pkl
