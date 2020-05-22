@@ -18,7 +18,8 @@ class AssertTest(object):
 def test_discriminator(Discriminator):
     batch_size = 50
     conv_dim=10
-    D = Discriminator(conv_dim)
+    input_shape=32
+    D = Discriminator(conv_dim, input_shape)
 
     # create random image input
     x = torch.from_numpy(np.random.randint(1, size=(batch_size, 3, 32, 32))*2 -1).float()
@@ -44,7 +45,8 @@ def test_generator(Generator):
     batch_size = 50
     z_size = 25
     conv_dim=10
-    G = Generator(z_size, conv_dim)
+    input_shape=32
+    G = Generator(z_size, conv_dim, input_shape)
 
     # create random input
     z = np.random.uniform(-1, 1, size=(batch_size, z_size))
